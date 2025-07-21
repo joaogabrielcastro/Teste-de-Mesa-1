@@ -1,4 +1,4 @@
-﻿using System; // Importa o namespace System, que contém Console, etc.
+﻿using System; 
 
 public class Program
 {
@@ -19,8 +19,8 @@ public class Program
         double c = (double)(a + b) / 2;
         c = c - 40;
 
-        int[] v = new int[4]; // Array com 4 posições (índices 0 a 3)
-        v[3] = a + b + (int)c; // Converta c para int se o array for int
+        int[] v = new int[4]; 
+        v[3] = a + b + (int)c; 
 
         Console.WriteLine($"A: {a}");
         Console.WriteLine($"B: {b}");
@@ -31,7 +31,7 @@ public class Program
     public static void Exercicio2()
     {
         int a = 2;
-        int[] v = new int[8]; // Array de tamanho suficiente para índices até 7
+        int[] v = new int[8]; 
 
         Console.Write("A: ");
         while (a < 8)
@@ -40,12 +40,12 @@ public class Program
             Console.Write($"{a}, ");
             a = a + 1;
         }
-        Console.WriteLine(); // Nova linha após a sequência de 'a'
+        Console.WriteLine(); 
 
         Console.WriteLine("Valores de V preenchidos:");
         for (int i = 0; i < v.Length; i++)
         {
-            if (v[i] != 0) // Imprime apenas os valores que foram explicitamente definidos pelo loop
+            if (v[i] != 0) 
             {
                 Console.WriteLine($"V[{i}]: {v[i]}");
             }
@@ -55,17 +55,16 @@ public class Program
     public static void Exercicio3()
     {
         int a = 7;
-        int b = a - 6; // b será 1
+        int b = a - 6; 
 
-        int[] v = new int[6]; // Array de tamanho suficiente para índices até 5
-
+        int[] v = new int[6]; 
         Console.WriteLine($"A: {a}");
         Console.WriteLine($"B inicial: {b}");
 
         while (b < a)
         {
             v[b] = b + a;
-            Console.WriteLine($"V[{b}]: {v[b]}"); // Mostra o valor de v[b] a cada iteração
+            Console.WriteLine($"V[{b}]: {v[b]}");
             b = b + 2;
         }
 
