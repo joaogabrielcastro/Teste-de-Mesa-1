@@ -34,7 +34,7 @@ public class Program
         int[] v = new int[8]; 
 
         Console.Write("A: ");
-        while (a < 8)
+        while (a < 6)
         {
             v[a] = 10 * a;
             Console.Write($"{a}, ");
